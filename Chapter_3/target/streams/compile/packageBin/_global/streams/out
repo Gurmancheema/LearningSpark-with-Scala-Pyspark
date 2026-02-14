@@ -1,7 +1,11 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/gurman/spark_prac/Chapter_3/target/scala-2.12/spark-scala-app_2.12-0.1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/target/scala-2.12/spark-scala-app_2.12-0.1.0.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	schema_def$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/Chapter_3/target/scala-2.12/classes/schema_def$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/target/scala-2.12/classes/schema_def$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cols_expressions.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/target/scala-2.12/classes/cols_expressions.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	schema_def.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/Chapter_3/target/scala-2.12/classes/schema_def.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/target/scala-2.12/classes/schema_def.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cols_expressions$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/target/scala-2.12/classes/cols_expressions$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
