@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/src/main/scala/rows.scala:18:18: value implicts is not a member of org.apache.spark.sql.SparkSession[0m
-[0m[[0m[31merror[0m] [0m[0m    import spark.implicts._[0m
-[0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/src/main/scala/rows.scala:34:22: value toDF is not a member of Seq[(String, String, String)][0m
-[0m[[0m[31merror[0m] [0m[0m    val df = df_rows.toDF("Name","State","Genre")[0m
-[0m[[0m[31merror[0m] [0m[0m                     ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/src/main/scala/common_dataframe_operations.scala:111:61: ';' expected but ',' found.[0m
+[0m[[0m[31merror[0m] [0m[0m                                  .withColumn("OnWatchDate"), to_date(col("WatchDate"), "MM/dd/yyyy"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
