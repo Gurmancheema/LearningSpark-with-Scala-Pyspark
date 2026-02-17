@@ -111,15 +111,46 @@ object dataframe_operations{
                                   .drop("CallDate")
                                   .withColumn("OnWatchDate", to_date(col("WatchDate"), "MM/dd/yyyy"))
                                   .drop("WatchDate")
-                                  .withColumn("AvailableDtTS", to_timestamp(col("AvailableDtTM"), "MM/dd/yyyy hh:mm:                                    ss a")).drop("AvailableDtTM")
+                                  .withColumn("AvailableDtTS", to_timestamp(col("AvailableDtTM"), "MM/dd/yyyy hh:mm                                   :ss a"))
+                                  .drop("AvailableDtTM")
 
     // select the converted columns
      changed_datatype_cols.select("IncidentDate","OnWatchDate","AvailableDtTS").show(5)
 
 
-    // 6.
+    // 6. Aggregations
+    // Most common type of fire call
+    
+    val common_fire_calls = df.select("CallType")
+                              .where(col("CallType").isNotNull)
+                              .groupBy(col("CallType"))
+                              .agg(count("*").alias("Total_Count"))
+                              .orderBy(desc("Total_Count"))
+                              .show()
 
+    // What ZipCodes accounted for most calls?
 
+    val zip_codes_calls = df.select("Zipcode")
+                            .where(col("Zipcode").isNotNull)
+                            .groupBy(col("Zipcode"))
+                            .agg(count("*").alias("Total_Calls"))
+                            .orderBy(desc("Total_Calls"))
+                            .show()
+
+    // 7. Statistical Methods
+    // Compute the sum of alarms in the dataset
+    // Compute the average response time
+    // Minimum & maximum response time
+
+    val stats_df = df.agg(sum("NumAlarms").alias("Number_of_alarms"),avg("Delay").alias("Average_response_time"),
+                      max("Delay").alias("max_response_time"),min("Delay").alias("min_response_time"))
+
+    stats_df.show()
+
+    // 8. DataFrameWriter
+    // saving the dataframe as table or parquet file format
+    
+   val stats_df_results = stats_df.write.mode("overwrite").format("parquet").save("../../../results")
     //stop the spark session
     spark.stop()
   }
