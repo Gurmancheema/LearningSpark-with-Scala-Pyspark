@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/src/main/scala/common_dataframe_operations.scala:153:5: not found: value stats_df_results[0m
-[0m[[0m[31merror[0m] [0m[0m    stats_df_results = stats_df.write.mode("overwrite").format("parquet").saveAsTable("../../../results/stats_df")[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_3/src/main/scala/end-to-end-dataframe-exercise.scala:81:50: not found: value week[0m
+[0m[[0m[31merror[0m] [0m[0m                                        .groupBy(week(col("OnWatchDate")).alias("Week"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
