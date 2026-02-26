@@ -94,16 +94,21 @@ object sparksql_operations {
                                                 ORDER BY total_delays DESC """).show(10)
 
 
+    // 4. Label all flights regardless of their origin or destination with an indication
+    // of delays they experienced. For example:; Very Long delay > 6 hours, Long delay 2-6 hours
 
-
-
-
-
-
-
-
-
-
+   val df_delays_experienced = spark.sql(""" SELECT *,
+                                              CASE
+                                                WHEN delay > 360 THEN 'Very Long Delay'
+                                                WHEN delay >= 120 AND delay <= 360 THEN 'Long Delay'
+                                                WHEN delay >= 60 AND delay < 120 THEN 'Short Delay'
+                                                WHEN delay > 0 AND delay < 60 THEN 'Tolerable Delay'
+                                                WHEN delay = 0 THEN 'No Delay'
+                                              ELSE 'Early'
+                                              END AS Flight_Delays
+                                              FROM us_flight_departure_delays
+                                              ORDER BY delay DESC""").show()
+ 
     //stop the spark session
 
     spark.stop()
