@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_5/src/main/scala/udf.scala:28:19: value createDataFrame is not a member of Seq[(Int, String, String)][0m
+[0m[[0m[31merror[0m] [0m[0m    val df = data.createDataFrame("id","first_name","last_name")[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
