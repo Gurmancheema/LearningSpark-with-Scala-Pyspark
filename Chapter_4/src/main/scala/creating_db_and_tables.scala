@@ -32,7 +32,8 @@ object creating_db_tables {
 
     // 1. Creating managed table using sparksql
 
-    spark.sql(""" CREATE TABLE IF NOT EXISTS managed_us_flights_delays(date STRING, delay INT, distance INT,                                                       origin STRING, destination STRING)""")
+    spark.sql(""" CREATE TABLE IF NOT EXISTS managed_us_flights_delays(date STRING, delay INT, distance INT,
+                  origin STRING, destination STRING)""")
 
     // 2. Verify the database & table creation
     
