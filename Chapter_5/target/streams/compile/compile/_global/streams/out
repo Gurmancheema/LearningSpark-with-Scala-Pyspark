@@ -1,28 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_5/src/main/scala/explode_collect.scala:62:15: overloaded method value register with alternatives:[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF22[_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF21[_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF20[_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF19[_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF18[_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF17[_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF16[_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF15[_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF14[_, _, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF13[_, _, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF12[_, _, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF11[_, _, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF10[_, _, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF9[_, _, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF8[_, _, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF7[_, _, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF6[_, _, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF5[_, _, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF4[_, _, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF3[_, _, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF2[_, _, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF1[_, _],returnType: org.apache.spark.sql.types.DataType)Unit <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (name: String,f: org.apache.spark.sql.api.java.UDF0[_],returnType: org.apache.spark.sql.types.DataType)Unit[0m
-[0m[[0m[31merror[0m] [0m[0m cannot be applied to (String, Array[Int] => Array[Int], org.apache.spark.sql.types.ArrayType)[0m
-[0m[[0m[31merror[0m] [0m[0m    spark.udf.register("addoneudf",add_one_udf,ArrayType(IntegerType))[0m
-[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_5/src/main/scala/higher_order_functions.scala:67:54: value show is not a member of org.apache.spark.sql.Column[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value show'?[0m
+[0m[[0m[31merror[0m] [0m[0m                                                    .show())[0m
+[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
