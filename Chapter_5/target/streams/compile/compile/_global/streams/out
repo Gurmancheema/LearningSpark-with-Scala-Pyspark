@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_5/src/main/scala/common_dataframe_sparksql_operations.scala:109:37: ';' expected but '.' found.[0m
-[0m[[0m[31merror[0m] [0m[0m                                    .filter(col("destination") === "SFO") &&[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_5/src/main/scala/common_dataframe_sparksql_operations.scala:151:56: not found: value denseRank[0m
+[0m[[0m[31merror[0m] [0m[0m  val most_delays = total_delay_time.withColumn("rank",denseRank().over(window_spec))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

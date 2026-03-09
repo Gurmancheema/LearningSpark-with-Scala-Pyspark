@@ -3,6 +3,7 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
+import org.apache.spark.sql.expressions._
 
 
 //***************************** EXERCISE OBJECTIVE OVERVIEW ***************************************
@@ -113,9 +114,44 @@ object df_operations{
 
    verify_df.show()
 
+  // 2. *********************************** JOIN OPERATION *********************************************
+  
+  // since the airportsna dataframe & foo dataframe has a common column
+  // we can perform an inner join operation to list the matching rows of both the dataframes
+  // the default join in scala is the inner join
 
+  val joined_df = airport_df.join(foo, airport_df("IATA") === foo("origin")).select("city","state","origin","destination")
 
+  // verify dataframe
+  joined_df.show()
 
+  // 3 ***************************** WINDOW FUNCTION ******************************************
+
+  // let's start by creating a review of the TotalDelays (calculated by sum(Delay)) experienced
+  // by flights originating from Seattle (SEA), San Francisco (SFO), and New York City
+  // (JFK) and going to a specific set of destination locations.
+  
+  val total_delay_time = updated_flights_df.filter((col("origin").isin("SEA","SFO","JFK")) &&
+                                                   (col("destination").isin("SEA", "SFO", "JFK", "DEN", "ORD", "LAX", "ATL")
+                                                   ))
+                                            .groupBy(col("origin"), col("destination"))
+                                            .agg(sum(col("delay")).alias("TotalDelays"))
+                                            .orderBy("TotalDelays")
+
+  total_delay_time.show()
+  println(total_delay_time.describe())
+
+  // What if for each of these origin airports you wanted to find the three destinations that
+  // experienced the most delays?
+  
+  val window_spec = Window.partitionBy("origin").orderBy(desc("TotalDelays"))
+
+  // putting this window on the dataframe
+
+  val most_delays = total_delay_time.withColumn("rank",dense_rank().over(window_spec))\
+                                    .filter(col("rank") <=3)
+
+  most_delays.show()
 
 
 
