@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/src/main/scala/creating_sample_dataset.scala:63:48: identifier expected but '=' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    def filter_function_2 (d: dataset_schema): = d.usage > 900[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

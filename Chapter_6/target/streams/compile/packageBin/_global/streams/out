@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/target/scala-2.12/spark-scala-app_2.12-0.1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dataset_schema.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/target/scala-2.12/classes/dataset_schema.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sample_dataset.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/target/scala-2.12/classes/sample_dataset.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sample_dataset$$typecreator5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/target/scala-2.12/classes/sample_dataset$$typecreator5$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sample_dataset$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/target/scala-2.12/classes/sample_dataset$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	dataset_schema$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/target/scala-2.12/classes/dataset_schema$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
