@@ -59,6 +59,31 @@ object sample_dataset{
 
     filtered_users.show()
 
+    // 2. find out the usage cost for each user whose usage value is
+    //    over a certain threshold so we can offer those users a special price per minute.
+    
+    // ------ creating a lambda function ----------------------
+    
+    val users_with_more_usage = ds.map(u => (if (u.usage > 700) u.usage * 1.5 else u.usage * .50))
+
+    users_with_more_usage.show()
+
+    // alternatively defining a function to pass as an argument to the map function
+
+    def filter_users (d: dataset_schema): Double = { if (d.usage > 700) d.usage * 1.5 else d.usage * .50 }
+
+    val user_with_more_usage = ds.map(filter_users(_))
+
+    user_with_more_usage.show()
+
+
+    // 3. Add a new column Cost associated with each user in the dataframe
+
+    val new_ds_with_cost_col = ds.withColumn("cost", when(col("usage") > 700, col("usage") * 1.5)
+                                              .otherwise(col("usage") * .50))
+
+    new_ds_with_cost_col.show()
+
     //stop the spark session
     spark.stop()
   }

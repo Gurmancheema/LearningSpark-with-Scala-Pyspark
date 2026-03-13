@@ -1,4 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/src/main/scala/creating_sample_dataset.scala:63:48: identifier expected but '=' found.[0m
-[0m[[0m[31merror[0m] [0m[0m    def filter_function_2 (d: dataset_schema): = d.usage > 900[0m
-[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/src/main/scala/creating_sample_dataset.scala:76:71: not found: value usage[0m
+[0m[[0m[31merror[0m] [0m[0m    val user_with_more_usage = ds.withColumn("cost", map(filter_users(usage)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_6/src/main/scala/creating_sample_dataset.scala:76:70: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Double[0m
+[0m[[0m[31merror[0m] [0m[0m required: org.apache.spark.sql.Column[0m
+[0m[[0m[31merror[0m] [0m[0m    val user_with_more_usage = ds.withColumn("cost", map(filter_users(usage)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
