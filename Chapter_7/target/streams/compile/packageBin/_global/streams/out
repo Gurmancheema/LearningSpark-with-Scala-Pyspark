@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/target/scala-2.12/spark-scala-app_2.12-0.1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	spark_configs.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/target/scala-2.12/classes/spark_configs.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	spark_configs$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/target/scala-2.12/classes/spark_configs$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

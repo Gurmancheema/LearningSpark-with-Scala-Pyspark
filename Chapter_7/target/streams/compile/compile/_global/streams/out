@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/spark_config_settings.scala:31:21: value foreach is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0m    updated_configs.foreach {case(k,v) => println(s"$k->$v") }[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
