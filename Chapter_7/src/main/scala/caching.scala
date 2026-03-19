@@ -10,7 +10,7 @@ object caching{
 
     // instantiating a spark session
 
-    val spark = SparkSession.build.appName("caching").getOrCreate()
+    val spark = SparkSession.builder.appName("caching").getOrCreate()
 
     // creating a static dataframe of 1 million records
     // having another column as square of primary columns 
@@ -37,7 +37,7 @@ object caching{
     df.count()
     val end_first_time_count =  System.currentTimeMillis()
 
-    println("Total time taken for initial count (ms) :" + end_first_time_count - start_first_time_count)
+    println(s"Total time taken for initial count (ms) : ${end_first_time_count - start_first_time_count}")
 
     // now the dataframe is cached
     // let's perform the action on cached dataframe again
@@ -46,7 +46,7 @@ object caching{
     df.count()
     val end_second_time_count = System.currentTimeMillis()
 
-    println(s"Total time taken for final count from cached dataframe (ms) : ($end_second_time_count - $start_second_time_count)")
+    println(s"Total time taken for final count from cached dataframe (ms) : ${end_second_time_count - start_second_time_count}")
     // creating a timer to stop the spark session after 2 mins
 
     Thread.sleep(120000)

@@ -1,10 +1,4 @@
 [0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/caching.scala:13:30: value build is not a member of object org.apache.spark.sql.SparkSession[0m
 [0m[[0m[31merror[0m] [0m[0m    val spark = SparkSession.build.appName("caching").getOrCreate()[0m
 [0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/caching.scala:40:80: value - is not a member of String[0m
-[0m[[0m[31merror[0m] [0m[0m    println("Total time taken for initial count (ms) :" + end_first_time_count - start_first_time_count)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/caching.scala:49:101: value - is not a member of String[0m
-[0m[[0m[31merror[0m] [0m[0m    println("Total time taken for final count from cached dataframe (ms) :" + end_second_time_count - start_second_time_count)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
