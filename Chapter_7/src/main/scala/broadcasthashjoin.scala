@@ -50,7 +50,11 @@ object hash_join{
     val query_joined_df = joined_df.select("*")
                                    .orderBy("sales_id")
 
-      query_joined_df.show()
+    query_joined_df.show()
+
+    // let's explain the join using .explain() function
+
+    joined_df.explain("simple")
 
     //stop the spark session
     spark.stop()
