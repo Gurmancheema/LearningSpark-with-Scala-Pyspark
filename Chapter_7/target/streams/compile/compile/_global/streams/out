@@ -1,9 +1,24 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/broadcasthashjoin.scala:23:33: value toDF is not a member of Seq[(Int, Int, Int, Double)][0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/optimized_shuffle_sort.scala:22:24: object collections is not a member of package scala[0m
+[0m[[0m[31merror[0m] [0m[0m    val states = scala.collections.mutable.Map[Int,String]()[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/optimized_shuffle_sort.scala:23:23: object collections is not a member of package scala[0m
+[0m[[0m[31merror[0m] [0m[0m    val items = scala.collections.mutable.Map[Int,String]()[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/optimized_shuffle_sort.scala:38:31: value toDF is not a member of scala.collection.immutable.IndexedSeq[Nothing][0m
 [0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value toDF'?[0m
-[0m[[0m[31merror[0m] [0m[0m                              ).toDF("sales_id","product_id","quantity","unit_price")[0m
-[0m[[0m[31merror[0m] [0m[0m                                ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/broadcasthashjoin.scala:36:35: value toDF is not a member of Seq[(Int, String, String)][0m
+[0m[[0m[31merror[0m] [0m[0m                             .toDF("uid","login","email","state")[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/optimized_shuffle_sort.scala:44:32: value toDF is not a member of scala.collection.immutable.IndexedSeq[Nothing][0m
 [0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value toDF'?[0m
-[0m[[0m[31merror[0m] [0m[0m                                ).toDF("product_id","product_name","category")[0m
-[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m                              .toDF("transaction_id","quantity","user_id","amount","state","items")[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/optimized_shuffle_sort.scala:49:5: not found: value userdf[0m
+[0m[[0m[31merror[0m] [0m[0m    userdf.orderBy(asc("uid")).write.format("parquet").bucketBy(8,"uid").saveAsTable("Userstbl")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/optimized_shuffle_sort.scala:68:52: value $ is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m    val joined_df = users_table.join(orders_table, $"uid" === $"user_id")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_7/src/main/scala/optimized_shuffle_sort.scala:68:63: value $ is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m    val joined_df = users_table.join(orders_table, $"uid" === $"user_id")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m7 errors found[0m
