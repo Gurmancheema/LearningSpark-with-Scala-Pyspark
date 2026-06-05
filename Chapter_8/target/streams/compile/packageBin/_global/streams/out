@@ -1,0 +1,21 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/spark-scala-app_2.12-0.1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UserState.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/classes/UserState.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	arbitrary_state_ops$$typecreator14$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/classes/arbitrary_state_ops$$typecreator14$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UserState$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/classes/UserState$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	User.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/classes/User.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	User$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/classes/User$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	arbitrary_state_ops$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/classes/arbitrary_state_ops$$typecreator9$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	arbitrary_state_ops$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/classes/arbitrary_state_ops$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	arbitrary_state_ops$$typecreator19$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/classes/arbitrary_state_ops$$typecreator19$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	arbitrary_state_ops.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/target/scala-2.12/classes/arbitrary_state_ops.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

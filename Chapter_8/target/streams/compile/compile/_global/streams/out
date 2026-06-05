@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_8/src/main/scala/arbitrary_state_computations.scala:61:76: missing argument list for method update_function in object arbitrary_state_ops[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `update_function _` or `update_function(_,_,_)` instead of `update_function`.[0m
+[0m[[0m[31merror[0m] [0m[0m    val result = stream_lines_data.groupByKey(_.userId).mapGroupsWithState(update_function)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
