@@ -12,7 +12,7 @@ object optimized_shuffle_sort{
     // instantiating a spark session
     val spark = SparkSession.builder().appName("opitmized_shuffle")
                             .config("spark.sql.autoBroadCastJoinThreshold","-1")
-                            .config("driver-memory","4g")
+                            .config("driver-memory","8g")
                             .getOrCreate()
 
     // creating synthetic datasets having 1 million records each
