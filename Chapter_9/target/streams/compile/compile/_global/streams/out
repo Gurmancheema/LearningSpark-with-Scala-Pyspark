@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/src/main/scala/spark_delta_lake_build.scala:13:30: value build is not a member of object org.apache.spark.sql.SparkSession[0m
-[0m[[0m[31merror[0m] [0m[0m    val spark = SparkSession.build().appName("spark_delta_lake")[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/src/main/scala/spark_streaming_delta_lake.scala:26:39: value writeStream is not a member of org.apache.spark.sql.SparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m    val writing_to_delta_lake = spark.writeStream.format("delta")[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
