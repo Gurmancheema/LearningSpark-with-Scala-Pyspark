@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/src/main/scala/spark_streaming_delta_lake.scala:26:39: value writeStream is not a member of org.apache.spark.sql.SparkSession[0m
-[0m[[0m[31merror[0m] [0m[0m    val writing_to_delta_lake = spark.writeStream.format("delta")[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/src/main/scala/evovling_schema.scala:48:55: not found: value delta_lake[0m
+[0m[[0m[31merror[0m] [0m[0m    val latest_read = spark.read.format("delta").load(delta_lake).printSchema()[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
