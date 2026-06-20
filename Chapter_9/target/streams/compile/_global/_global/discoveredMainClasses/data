@@ -1,1 +1,1 @@
-["evolving_schema","spark_delta_lake","spark_streaming_delta_lake"]
+["evolving_schema","fetch_version","spark_delta_lake","spark_streaming_delta_lake","transform_data","upsert_data"]

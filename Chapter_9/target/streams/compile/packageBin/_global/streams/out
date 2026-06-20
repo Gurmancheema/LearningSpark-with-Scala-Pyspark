@@ -1,13 +1,27 @@
 [0m[[0m[0mdebug[0m] [0m[0mPackaging /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/spark-scala-app_2.12-0.1.0.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	upsert_data$$typecreator6$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/upsert_data$$typecreator6$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fetch_version$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/fetch_version$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transform_data$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/transform_data$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	evolving_schema.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/evolving_schema.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	spark_streaming_delta_lake.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/spark_streaming_delta_lake.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	upsert_data$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/upsert_data$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	upsert_data.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/upsert_data.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	evolving_schema$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/evolving_schema$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fetch_version.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/fetch_version.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	spark_streaming_delta_lake$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/spark_streaming_delta_lake$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	transform_data.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/transform_data.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	spark_delta_lake$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/spark_delta_lake$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	spark_delta_lake.class[0m
