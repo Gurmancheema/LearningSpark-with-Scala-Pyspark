@@ -6,6 +6,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/fetch_version$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	transform_data$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/transform_data$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fetch_delta_table_version$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/fetch_delta_table_version$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	evolving_schema.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/evolving_schema.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	spark_streaming_delta_lake.class[0m
@@ -16,6 +18,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/upsert_data.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	evolving_schema$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/evolving_schema$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fetch_delta_table_version.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/fetch_delta_table_version.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	fetch_version.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_9/target/scala-2.12/classes/fetch_version.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	spark_streaming_delta_lake$.class[0m
