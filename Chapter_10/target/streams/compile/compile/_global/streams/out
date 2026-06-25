@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/data_ingestion.scala:38:41: not found: value test_data_path[0m
+[0m[[0m[31merror[0m] [0m[0m      test.write.format("parquet").save(test_data_path)[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
