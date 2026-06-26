@@ -1,4 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/data_ingestion.scala:38:41: not found: value test_data_path[0m
-[0m[[0m[31merror[0m] [0m[0m      test.write.format("parquet").save(test_data_path)[0m
-[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/model_training.scala:28:46: value setOutputCols is not a member of org.apache.spark.ml.feature.VectorAssembler[0m
+[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value setOutputCols'?[0m
+[0m[[0m[31merror[0m] [0m[0m                                            .setOutputCols("features")[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
