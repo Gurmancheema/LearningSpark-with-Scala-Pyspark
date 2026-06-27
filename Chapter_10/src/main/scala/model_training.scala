@@ -65,6 +65,33 @@ object ml_flow{
 
     println(s"The formula for the linear regression line is price = ${m}*bedrooms + ${b}")
 
+    // ************** STEP 3: USING LR TRANSFORMER ON TEST DATA TO PERFORM PREDICTIONS *************************
+
+    val test_df_path ="/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/data/test/"
+
+    // load the test data into a dataframe
+    val testdf = spark.read.format("parquet").load(test_df_path)
+
+    // verify the schema and shape of dataframe
+    testdf.printSchema()
+    println(s"No. of rows in test dataset: ${testdf.count()} & No. of columns: ${testdf.columns.length}")
+
+    // let's pass this test dataframe through same VectorAssembler transformer
+    // Any preprocessing applied during training must be applied identically to the test data.
+
+    val vecTestdf = vecAssembler.transform(testdf)
+
+    // verify the schema of transformed dataframe
+
+    vecTestdf.select("bedrooms","features","price").show()
+
+    // since the test dataset has been transformed in desired input format for the trained estimator
+    // let's pass the transformed dataframe & make predictions 
+    val predictions = lr_model.transform(vecTestdf)
+
+    predictions.select("bedrooms","features","price","prediction").show()
+
+
     // stop the spark session
     spark.stop()
   }

@@ -1,4 +1,16 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/model_training.scala:63:22: value coeffcients is not a member of org.apache.spark.ml.regression.LinearRegressionModel[0m
-[0m[[0m[31merror[0m] [0m[0m    val m = lr_model.coeffcients(0)[0m
-[0m[[0m[31merror[0m] [0m[0m                     ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/model_training.scala:73:5: not found: value testdf[0m
+[0m[[0m[31merror[0m] [0m[0m    testdf = spark.read.format("parquet").load(test_df_path)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/model_training.scala:76:5: not found: value testdf[0m
+[0m[[0m[31merror[0m] [0m[0m    testdf.printSchema()[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/model_training.scala:77:46: not found: value testdf[0m
+[0m[[0m[31merror[0m] [0m[0m    println(s"No. of rows in test dataset: ${testdf.count()} & No. of columns: ${testdf.columns.length}")[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/model_training.scala:77:82: not found: value testdf[0m
+[0m[[0m[31merror[0m] [0m[0m    println(s"No. of rows in test dataset: ${testdf.count()} & No. of columns: ${testdf.columns.length}")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/model_training.scala:81:42: not found: value testdf[0m
+[0m[[0m[31merror[0m] [0m[0m    val predictions = lr_model.transform(testdf)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
