@@ -1,4 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/creating_pipeline.scala:57:5: ')' expected but 'val' found.[0m
-[0m[[0m[31merror[0m] [0m[0m    val pipeline_model = pipeline.fit(traindf)[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/stringindexer_and_onehotencoding.scala:26:19: not enough arguments for method apply: (i: Int)(String, String) in class Array.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter i.[0m
+[0m[[0m[31merror[0m] [0m[0m    traindf.dtypes()[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
