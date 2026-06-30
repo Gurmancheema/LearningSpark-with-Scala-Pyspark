@@ -5,6 +5,7 @@ import org.apache.spark.sql.types._
 import org.apache.spark.ml.feature.{StringIndexer,OneHotEncoder,VectorAssembler}
 import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.regression.LinearRegression
+import org.apache.spark.ml.evaluation.RegressionEvaluator
 
 // creating a singleton scala object containing the main method
 object pipeline_ml_flow{
@@ -84,9 +85,15 @@ object pipeline_ml_flow{
 
     preddf.select("features","price","prediction").show()
 
+    // ***************** MODEL EVALUTION ******************************
+    // Since this is a regression task, let's use RMSE to evaulate the model's performance
 
+    val regression_evaluator = new RegressionEvaluator().setPredictionCol("prediction").setLabelCol("price").setMetricName("rmse") 
 
-    // stop the spark session
+    val rmse = regression_evaluator.evaluate(preddf)
+
+    println(s"RMSE is : ${rmse}")
+     // stop the spark session
     spark.stop()
   }
 }
