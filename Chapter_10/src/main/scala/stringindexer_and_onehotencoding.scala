@@ -53,10 +53,36 @@ object indexing_ohe{
     val transformed_indexing_model = stringindexer_learning_model.transform(traindf)
 
     transformed_indexing_model.printSchema()
+    transformed_indexing_model.select("bed_typeINDEX").distinct().show()
     transformed_indexing_model.select("bed_type","bed_typeINDEX").show()
   
     // Step 3: Passing the transformed indexed model to OneHotEncoder estimator
-    //
+    // again, first define the ouput cols of OHE estimator
+
+    val ohe_output_cols = categoricalcols.map(_+"OHE")
+
+    // now instantiating OHE estimator with setter methods
+    // again, this is just an object of OHE with configs, it hasn't learnt anything yet
+
+    val ohe = new OneHotEncoder().setInputCols(indexed_output_cols).setOutputCols(ohe_output_cols)
+
+    // pass the data which is result of learnings from the StringIndexer transformer
+    // to OHE estimator, it will learn from this transformed dataframe & will return a transformer
+
+    val ohe_model = ohe.fit(transformed_indexing_model)
+
+    // now the ohe_model has learned about the data, let's pass the dataframe again to 
+    // perform transformation
+
+    val ohe_transformed_df = ohe_model.transform(transformed_indexing_model)
+
+    // print the schema to verify
+
+    ohe_transformed_df.printSchema()
+    ohe_transformed_df.select("bed_type").distinct().show()
+    ohe_transformed_df.select("bed_type","bed_typeINDEX","bed_typeOHE").show()
+
+
 
 
     // stop the spark session

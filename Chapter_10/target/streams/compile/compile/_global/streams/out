@@ -1,5 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/stringindexer_and_onehotencoding.scala:26:19: not enough arguments for method apply: (i: Int)(String, String) in class Array.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter i.[0m
-[0m[[0m[31merror[0m] [0m[0m    traindf.dtypes()[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/stringindexer_and_onehotencoding.scala:79:5: not found: value ohe_transformed_df[0m
+[0m[[0m[31merror[0m] [0m[0m    ohe_transformed_df.printSchema()[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/stringindexer_and_onehotencoding.scala:80:5: not found: value ohe_transformed_df[0m
+[0m[[0m[31merror[0m] [0m[0m    ohe_transformed_df.select("bed_type","bed_typeINDEX","bed_typeOHE").show()[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
