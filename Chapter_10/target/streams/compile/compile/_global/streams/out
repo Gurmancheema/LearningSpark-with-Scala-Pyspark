@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/pipeline_encoding.scala:91:110: value setMetricname is not a member of org.apache.spark.ml.evaluation.RegressionEvaluator[0m
-[0m[[0m[31merror[0m] [0m[0m    val regression_evaluator = new RegressionEvaluator().setPredictionCol("prediction").setLabelCol("price").setMetricname("rmse")[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/pipeline_encoding.scala:109:5: ')' expected but 'val' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    val new_test_df = testdf.withColumn("avg_prediction",lit(label_avg))[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

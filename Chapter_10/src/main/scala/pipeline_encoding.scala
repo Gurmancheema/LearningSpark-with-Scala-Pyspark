@@ -18,11 +18,14 @@ object pipeline_ml_flow{
     val data_source_path = "/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/data/train"
 
     val traindf = spark.read.format("parquet").load(data_source_path)
+    traindf.printSchema()
+    println(s"No. of rows of training data: ${traindf.count()} & No. of columns of training data: ${traindf.columns.length}")
 
     // From this training data, let's filter out the categorical columns having dtype as "StringType"
     // these categorical cols will be further fed to StringIndexer estimator
 
     val categorical_cols = traindf.dtypes.filter(_._2 =="StringType").map(_._1)
+    println(s"Number of Categorical columns are: ${categorical_cols.length}")
     categorical_cols.foreach(println)
 
     // defining output cols of the StringIndexer estimator
@@ -46,6 +49,7 @@ object pipeline_ml_flow{
     // first let's filter out the numerical cols
 
     val numerical_cols = traindf.dtypes.filter(_._2 == "DoubleType").filter(_._1!="price").map(_._1)
+    println(s"Number of numerical cols filtered out are: ${numerical_cols.length}")
     numerical_cols.foreach(println)
 
     // concatenation
@@ -93,6 +97,41 @@ object pipeline_ml_flow{
     val rmse = regression_evaluator.evaluate(preddf)
 
     println(s"RMSE is : ${rmse}")
+
+    // RMSE score alone is of no use unless we have another metric to compare with
+    // therefore, let's build a  base line model and compute the average of "price" label from training data
+
+    val label_avg = traindf.agg(mean(col("price")).alias("avg_price")).first().getDouble(0)
+    println(s"Average of price from training data is : ${label_avg}")
+
+    // this is the baseline model, simply an average of the label from training data
+    // now let's compare it with predictions made on test data above
+
+    // appending a new column in testdata labelled as "avg_predictions"
+    // then pass the test data to the regressor evaluator to calculate baseline RMSE
+
+    val new_test_df = testdf.withColumn("avg_prediction",lit(label_avg))
+    new_test_df.select("price","avg_prediction").show()
+
+    // now let's calculate the baseline RMSE
+  
+    val regression_evaluator_for_baseline_model = new RegressionEvaluator().setPredictionCol("avg_prediction").setLabelCol("price").setMetricName("rmse")
+
+    val baseline_rmse = regression_evaluator_for_baseline_model.evaluate(new_test_df)
+
+    println(s"Baseline_RMSE: ${baseline_rmse}")
+
+    // *********** NOW COMPARE THE TWO RMSE *********************
+
+    if ( rmse < baseline_rmse)
+      println("Trained linear regression model learnt something new & performed well")
+    else
+      println(" Trained linear regression model didn't perform well")
+
+  
+
+
+
      // stop the spark session
     spark.stop()
   }
