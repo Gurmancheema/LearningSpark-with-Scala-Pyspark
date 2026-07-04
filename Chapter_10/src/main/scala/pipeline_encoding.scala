@@ -128,9 +128,18 @@ object pipeline_ml_flow{
     else
       println(" Trained linear regression model didn't perform well")
 
-  
+    // let'save our trained model
+    // saving a model is as simple as writing a dataframe to disk in spark
 
-
+    val saved_model_path = "/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/saved_models/"
+    
+    try{
+      pipeline.write.overwrite().save(saved_model_path)
+      println("Linear regression model is saved as pipeline")
+    }
+    catch {
+      case e: Exception => println("Error saving the model")
+    }
 
      // stop the spark session
     spark.stop()
