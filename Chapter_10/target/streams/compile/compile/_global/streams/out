@@ -1,4 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/decision_tree_regressor_model.scala:88:104: value setMetricsName is not a member of org.apache.spark.ml.evaluation.RegressionEvaluator[0m
-[0m[[0m[31merror[0m] [0m[0m    val rmse_evaluator = new RegressionEvaluator().setPredictionCol("prediction").setLabelCol("price").setMetricsName("rmse")[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/random_forest_regressor_model.scala:49:78: not found: value random_forest_regressorr[0m
+[0m[[0m[31merror[0m] [0m[0m    val pipeline = new Pipeline().setStages(Array(string_indexer, assembler, random_forest_regressorr))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/gurman/spark_prac/LearningSpark-with-Scala-Pyspark/Chapter_10/src/main/scala/random_forest_regressor_model.scala:52:30: not found: type RegressorEvaluator[0m
+[0m[[0m[31merror[0m] [0m[0m    val regressor_eval = new RegressorEvaluator().setLabelCol("price").setPredictionCol("predictions").setMetricName("rmse")[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
